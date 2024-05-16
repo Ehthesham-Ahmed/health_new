@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.row{
+  display: inline-flex;
+}
+.flip-card {
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+  display: inline-block;
+  padding: 10px;
+  
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+#column {
+  float: left;
+  /* width: 50%; */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+body{
+  background-color: rgb(135, 189, 82);
+}
+h1{
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+</style>
+</head>
+<body>
+
+<h1>Expert Doctors</h1>
+<div class="row">
+    <div class="flip-card" id="column">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images.png" alt="Avatar" style="width:250px;height:250px;">
+          </div>
+          <div class="flip-card-back">
+            <h2>Dr.Rahul</h2>
+            <p>Speciality : Dermatologists</p> 
+            <p>ID : 0432</p> 
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <div class="flip-card" id="column">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images.png" alt="Avatar" style="width:250px;height:250px;">
+          </div>
+          <div class="flip-card-back">
+            <h2>Dr.Javeed</h2> 
+            <p>Speciality : Ophthalmologists</p>
+            <p>ID : 0450</p>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <div class="flip-card" id="column">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images1.jpg" alt="Avatar" style="width:250px;height:250px;">
+          </div>
+          <div class="flip-card-back">
+            <h2>Dr.Ramya</h2> 
+            <p>Speciality : Anesthesiologists</p>
+            <p>ID : 0458</p>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <div class="flip-card" id="column">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images1.jpg" alt="Avatar" style="width:250px;height:250px;">
+          </div>
+          <div class="flip-card-back">
+            <h2>Dr.Ayesha</h2> 
+            <p>Speciality : Neurologists</p>
+            <p>ID : 0460</p>
+            <p></p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <div class="flip-card" id="column">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images1.jpg" alt="Avatar" style="width:250px;height:250px;">
+          </div>
+          <div class="flip-card-back">
+            <h2>Dr.Neha</h2> 
+            <p>Speciality : Gastroenterologists</p>
+            <p>ID : 0455</p>
+          </div>
+        </div>
+      </div>
+</div>
+<div class="row">
+    <div class="flip-card" id="column">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images.png" alt="Avatar" style="width:250px;height:250px;">
+          </div>
+          <div class="flip-card-back">
+            <h2>Dr.Narender</h2> 
+            <p>Speciality : Cardiologists</p>
+            <p>ID : 0457</p> 
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <div class="flip-card" id="column">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images.png" alt="Avatar" style="width:250px;height:250px;">
+          </div>
+          <div class="flip-card-back">
+            <h2>Dr.Srinivas</h2> 
+            <p>Speciality : Nephrologists</p>
+            <p>ID : 0466</p>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <div class="flip-card" id="column">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images.png" alt="Avatar" style="width:250px;height:250px;">
+          </div>
+          <div class="flip-card-back">
+            <h2>Dr.Sanjay</h2> 
+            <p>Speciality : Oncologists</p>
+            <p>ID : 0488</p>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <div class="flip-card" id="column">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images.png" alt="Avatar" style="width:250px;height:250px;">
+          </div>
+          <div class="flip-card-back">
+            <h2>Dr.Somesh</h2> 
+            <p>Speciality : Physiatrists</p>
+            <p>ID : 0467</p>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <div class="flip-card" id="column">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images1.jpg" alt="Avatar" style="width:250px;height:250px;">
+          </div>
+          <div class="flip-card-back">
+            <h2>Dr.Kavya</h2> 
+            <p>Speciality : Pediatricians</p>
+            <p>ID : 0475</p>
+          </div>
+        </div>
+      </div>
+</div>
+<div>
+    <a href="index.html"> <-previous   </a>
+</div>
+</body>
+</html>
